@@ -21,27 +21,32 @@
                 <label for="title">Titulo </label>
                 <div>
                     <input  class="is-invalid" type="text" name="title" id="title" >
-                    <br><small id="small-title"></small>
+                    <br>
+                    <span id="span-title" style="color: red;"></span>
                 </div>
                 <label for="rating">Calificación </label>
                 <div>
                     <input type="number" name="rating" id="rating" placeholder="Indicar valor entre 0 y 10"> 
-                    <br><small id="small-rating"></small>
+                    <br>
+                    <span id="span-rating" style="color: red;"></span>
                 </div>
                 <label for="awards">Premios </label>
                 <div>
                     <input type="number" name="awards" id="awards" placeholder="Indicar valor entre 0 y 10">
-                    <br><small id="small-awards"></small>
+                    <br>
+                    <span id="span-awards" style="color: red;"></span>
                 </div>
                 <label for="release_date">Fecha de creación </label>
                 <div>
                     <input type="date" name="release_date" id="release_date" >
-                    <br><small id="small-release_date"></small>
+                    <br>
+                    <span id="span-release_date" style="color: red;"></span>
                 </div>
                 <label for="length">Duración </label>
                 <div>
                     <input type="number" name="length" id="length" placeholder="Indicar duración entre 60 y 360 minutos" >
-                    <br><small id="small-length"></small>
+                    <br>
+                    <span id="span-length" style="color: red;"></span>
                 </div>
                 <label for="genreID">Género </label>
                 <div>
@@ -51,7 +56,8 @@
                         <option value="<%= genre.id %>"><%= genre.name %></option>
                         <% }); %>
                     </select>
-                    <br><small id="small-genre_id"></small>
+                    <br>
+                    <span id="span-genre_id" style="color: red;"></span>
                 </div>
                 <br>
                 <div> <button class="botonAgregar" type="submit">Agregar</button>

@@ -109,4 +109,7 @@ input, select{
   background-color: #F8D7DA;
   text-align: center;
   border-radius: 10px;
+  list-style: none;
+  text-transform: uppercase;
+  
 }
