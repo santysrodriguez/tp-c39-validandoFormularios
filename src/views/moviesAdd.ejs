@@ -17,36 +17,31 @@
     <section id="formulario" >
         <article class="mostrarFormulario">
             <ul class="errores"></ul>
-            <form class="form" action="/movies/create" method="POST" id="formularioMoviesAdd">
+            <form class="form" action="/movies/create" method="POST" id="formMoviesAdd">
                 <label for="title">Titulo </label>
                 <div>
-                    <input class="is-invalid" type="text" name="title" id="title" >
-                    <br>
-                    <span id="span-titulo" style="color: red;"></span>
+                    <input  class="is-invalid" type="text" name="title" id="title" >
+                    <br><small id="small-title"></small>
                 </div>
                 <label for="rating">Calificación </label>
                 <div>
-                    <input type="number" name="rating" id="rating" placeholder="Indicar valor entre 0 y 10">
-                    <br>
-                    <span id="span-calificacion" style="color: red;"></span>
+                    <input type="number" name="rating" id="rating" placeholder="Indicar valor entre 0 y 10"> 
+                    <br><small id="small-rating"></small>
                 </div>
                 <label for="awards">Premios </label>
                 <div>
                     <input type="number" name="awards" id="awards" placeholder="Indicar valor entre 0 y 10">
-                    <br>
-                    <span id="span-premios" style="color: red;"></span>
+                    <br><small id="small-awards"></small>
                 </div>
                 <label for="release_date">Fecha de creación </label>
                 <div>
                     <input type="date" name="release_date" id="release_date" >
-                    <br>
-                    <span id="span-fecha" style="color: red;"></span>
+                    <br><small id="small-release_date"></small>
                 </div>
                 <label for="length">Duración </label>
                 <div>
                     <input type="number" name="length" id="length" placeholder="Indicar duración entre 60 y 360 minutos" >
-                    <br>
-                    <span id="span-duracion" style="color: red;"></span>
+                    <br><small id="small-length"></small>
                 </div>
                 <label for="genreID">Género </label>
                 <div>
@@ -56,11 +51,10 @@
                         <option value="<%= genre.id %>"><%= genre.name %></option>
                         <% }); %>
                     </select>
-                    <br>
-                    <span id="span-genero" style="color: red;"></span>
+                    <br><small id="small-genre_id"></small>
                 </div>
                 <br>
-                <div> <button class="botonAgregar" type="submit" id="agregar">Agregar</button>
+                <div> <button class="botonAgregar" type="submit">Agregar</button>
                 
                 <a  class="botonVolver" href="/movies">Listado de Películas</a></div>
             </form>
